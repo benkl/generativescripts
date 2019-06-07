@@ -2,7 +2,7 @@ import bpy
 from bpy.types import Panel
 
 class BGS_PT_Panel(bpy.types.Panel):
-    bl_idname = "view3d.bgs_PT_panel"
+    bl_idname = "view3d.bgs_pt_panel"
     bl_label = "Generative Scripts"
     bl_space_type ="VIEW_3D"
     bl_region_type = "UI"
@@ -10,5 +10,7 @@ class BGS_PT_Panel(bpy.types.Panel):
     
     def draw(self, context):
         layout = self.layout
-        layout.label(text="Hello World")
+        layout.label(text="Mesh Operators")
         layout.operator('mesh.bgs_ot_triransub')
+        layout.label(text="Object Operators")
+        layout.operator('object.bgs_ot_switchlines')

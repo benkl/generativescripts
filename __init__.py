@@ -26,10 +26,12 @@ import bpy
 
 from . bgs_panel import BGS_PT_Panel
 from . bgs_triransub import BGS_OT_Triransub
+from . bgs_switchlines import BGS_OT_Switchlines
 
 classes = (
     BGS_PT_Panel,
-    BGS_OT_Triransub
+    BGS_OT_Triransub,
+    BGS_OT_Switchlines
 )
 
 def register():

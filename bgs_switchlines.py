@@ -1,9 +1,9 @@
 import bpy
 import bmesh
 
-class BGS_OT_Triransub(bpy.types.Operator):
-    bl_idname = "mesh.bgs_ot_triransub"
-    bl_label = "BGS_OT_Triransub"
+class BGS_OT_Switchlines(bpy.types.Operator):
+    bl_idname = "object.bgs_ot_switchlines"
+    bl_label = "BGS_OT_Switchlines"
 
     def execute(self, context):
         bmi = bpy.context.active_object

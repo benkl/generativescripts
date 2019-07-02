@@ -6,7 +6,7 @@ class BGS_PT_Panel(bpy.types.Panel):
     bl_label = "Generative Scripts"
     bl_space_type ="VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "Generative Scripts"
+    bl_category = "Misc"
     
     def draw(self, context):
         layout = self.layout
@@ -14,3 +14,5 @@ class BGS_PT_Panel(bpy.types.Panel):
         layout.operator('mesh.bgs_ot_triransub')
         layout.label(text="Object Operators")
         layout.operator('object.bgs_ot_switchlines')
+        layout.label(text="WIP Operators")
+        layout.operator('object.bgs_ot_diffusion')
